@@ -1,0 +1,55 @@
+# Claude Code
+.claude/
+
+# Ambiente virtual Python
+venv/
+.venv/
+env/
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Dados brutos (grandes, reproduzíveis via scripts de download)
+data/raw/**/*.csv
+data/raw/**/*.parquet
+data/raw/ifdata/_cache_*.csv
+
+# Dados processados (gerados pelos scripts)
+data/processed/
+
+# Arquivo de teste na raiz
+data/test.parquet
+
+# Modelos treinados (gerados pelo pipeline)
+**/*.joblib
+**/*.pkl
+**/*.pickle
+
+# Relatórios gerados
+reports/
+
+# Logs
+logs/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Variáveis de ambiente
+.env
+.env.*
+!.env.example
